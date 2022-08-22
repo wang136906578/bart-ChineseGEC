@@ -214,9 +214,9 @@ def train_model(model, adam, train_data, dev_data, tokenizer, device, args):
 
 def init_argument():
     parser = argparse.ArgumentParser(description='cpt_base')
-    parser.add_argument('--train_data', default='./data/train.nospac.tsv')
-    parser.add_argument('--dev_data', default='./data/dev.nospac.tsv')
-    parser.add_argument('--pretrain_model', default='/work/wanghongfei/cpt_base')
+    parser.add_argument('--train_data', default='./data/train.tsv')
+    parser.add_argument('--dev_data', default='./data/dev.tsv')
+    parser.add_argument('--pretrain_model', default='')
     parser.add_argument('--save_dir', default='./saved_model')
     parser.add_argument('--num_epoch', default=30, type=int, help='number of epoch')
     parser.add_argument('--batch_size', default=16, type=int, help='batch size')
