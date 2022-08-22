@@ -213,7 +213,7 @@ def train_model(model, adam, train_data, dev_data, tokenizer, device, args):
 
 
 def init_argument():
-    parser = argparse.ArgumentParser(description='cpt_base')
+    parser = argparse.ArgumentParser(description='bart')
     parser.add_argument('--train_data', default='./data/train.tsv')
     parser.add_argument('--dev_data', default='./data/dev.tsv')
     parser.add_argument('--pretrain_model', default='')
