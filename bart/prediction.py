@@ -168,12 +168,11 @@ def generate_multiprocess(feature):
 
 
 def init_argument():
-    parser = argparse.ArgumentParser(description='cpt_base')
+    parser = argparse.ArgumentParser(description='bart')
     parser.add_argument('--test_data', default='./data/test.tsv')
     parser.add_argument('--result_file', default='./output/result.txt')
-    parser.add_argument('--pretrain_model', default='/work/wanghongfei/cpt_base')    
-    parser.add_argument('--model', default='./saved_model/cgec_epoch_24')
-
+    parser.add_argument('--pretrain_model', default='')    
+    parser.add_argument('--model', default='')
     parser.add_argument('--batch_size', default=32, help='batch size')
     parser.add_argument('--max_len', default=512, help='max length of inputs')
     parser.add_argument('--max_len_generate', default=512, help='max length of generated text')
