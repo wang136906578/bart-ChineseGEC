@@ -24,6 +24,7 @@ python predict.py --pretrain_model $PATH_TO_PRETRAINED_MODEL \
 --result_file ./output.txt
 ```
 ## Evaluate
+Download the [PKUNLP word segmentation tools](https://drive.google.com/file/d/17OKIqbS74_GATm65Yg-JowqXZsVk84-W/view?usp=sharing) (since the original url has been expired, we provide our saved one on Google drive for convenience), and [m2scorer](https://github.com/nusnlp/m2scorer).
 ```
 cut -f 1 < output.txt > output.cut.txt
 cd libgrass-ui
