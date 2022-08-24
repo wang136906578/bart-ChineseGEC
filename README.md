@@ -11,9 +11,9 @@
 
 # How to use
 ## Download the data and the pre-trained model
-The official NLPCC2018_GEC training and test data can be downloaded from [here](https://github.com/zhaoyyoo/NLPCC2018_GEC). In the official training data, one error sentences may have multiple corrections, we divide them into seperate parts. Since there are no official development data, we randomly extract 5,000 sentences from the training data as the development data. We also segment all sentences into characters. Here is our [preprocessed data](https://drive.google.com/file/d/1Huy3QHN6hwfXOE_WjnRERBZyHffuRkv6/view?usp=sharing).
+The official NLPCC2018_GEC training and test data can be downloaded from [here](https://github.com/zhaoyyoo/NLPCC2018_GEC). In the official training data, one error sentences may have multiple corrections, we divide them into seperate parts. Since there are no official development data, we randomly extract 5,000 sentences from the training data as the development data. We also segment all sentences into characters. Here is our [preprocessed data](https://drive.google.com/file/d/1a9-DF90qY6heQXtNLaKzbVV8rWlVlRKQ/view?usp=sharing).
 
-For pre-trained model, see [here](https://github.com/ymcui/Chinese-BERT-wwm). The pre-trained model we used in our work is ``` RoBERTa-wwm-ext, Chinese ```.
+For pre-trained model, we use [t5-pegasus-base](https://huggingface.co/imxly/t5-pegasus/tree/main) and [bart-large-chinese](https://huggingface.co/fnlp/cpt-large/tree/main).
 ## Use fairseq command to turn the data into binary datasets
 ```
 python preprocess.py  --user-dir ./user  \
